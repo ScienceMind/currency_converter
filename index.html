@@ -33,6 +33,95 @@
                 <div class="tab-title">Single</div>
               </div>
             </div>
+
+            <div class="content">
+              <form>
+                <div class="form-inputs">
+                  <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input
+                      type="number"
+                      name="amount"
+                      id="amount"
+                      required
+                      placeholder="1.00"
+                    />
+                  </div>
+
+                  <div class="form-selects">
+                    <div class="form-select">
+                      <label for="from">From</label>
+                      <select class="select" name="from" id="from" required>
+                        <option value="" disabled selected hidden>
+                          Choose currency
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-select_icon switch-currencies">
+                      <img src="/img/Arrows.png" alt="arrows image" />
+                    </div>
+
+                    <div class="form-select">
+                      <label for="to">To</label>
+                      <select class="select" name="to" id="to">
+                        <option value="" disabled selected hidden>
+                          Choose currency
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-info">
+                  <div class="loader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <div class="form-results">
+                    <div class="form-result__item from" id="resultFrom">
+                      <div class="form-result__item-icon">
+                        <img src="/img/arrow.png" alt="arrow image" />
+                      </div>
+
+                      <div class="form-result__item-titles">
+                        <div class="form-result__item-title">USD</div>
+                        <div class="form-result__item-full">
+                          American dollar
+                        </div>
+                      </div>
+
+                      <div class="form-result__item-value">1.00</div>
+                    </div>
+
+                    <div class="form-result__equals">
+                      <img src="/img/equals.png" alt="equals image" />
+                    </div>
+
+                    <div class="form-result__item to" id="resultTo">
+                      <div class="form-result__item-icon">
+                        <img src="/img/arrow.png" alt="arrow image" />
+                      </div>
+
+                      <div class="form-result__item-titles">
+                        <div class="form-result__item-title">EUR</div>
+                        <div class="form-result__item-full">Euro</div>
+                      </div>
+
+                      <div class="form-result__item-value">2.00</div>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="form-submit">Convert</button>
+                </div>
+
+                <div class="rate-information">
+                  <div class="rate-conversion">$1 = $34</div>
+                  <div class="rate-last">Updated 28 November 2024</div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
