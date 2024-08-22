@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,4 +28,55 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 28px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+}
+.main:after, .main:before {
+  position: absolute;
+  content: "";
+  display: block;
+}
+.main::before {
+  width: 220px;
+  height: 220px;
+  bottom: 0;
+  left: -180px;
+  background: url(/img/bitcoin.png) no-repeat center/contain;
+  z-index: -1;
+}
+.main::after {
+  width: 144px;
+  height: 144px;
+  top: -72px;
+  right: 0;
+  background: url(/img/ethereum.png) no-repeat center/contain;
+}
+
+.wrapper {
+  background: linear-gradient(180deg, #271D35 0%, rgba(39, 29, 53, 0.2));
 }/*# sourceMappingURL=styles.css.map */
