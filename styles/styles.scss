@@ -69,6 +69,11 @@ input[type='number']{
     @include flex;
     flex-direction: column;
     row-gap: 28px;
+
+    @media screen and (max-width: 1100px) {
+        width: 100vw;
+        padding: 0 5px;
+    }
 }
 
 h1{
@@ -79,6 +84,11 @@ h1{
     margin: 0;
     line-height: 27px;
     font-weight: 700;
+
+    @media screen and (max-width: 1100px) {
+        font-size: 17px;
+        line-height: 24px;
+    }
 }
 
 .main{
